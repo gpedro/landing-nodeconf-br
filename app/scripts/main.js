@@ -1,6 +1,16 @@
 /* jshint devel:true */
 'use strict';
 
+$(function () {
+
+  $('.speaker-card-cover, .speaker-card-content').hover(function () {
+    $(this).addClass('card-hover');
+  }, function () {
+    $(this).removeClass('card-hover');
+  });
+
+});
+
 /*
 $(document).ready(function(){
   $('.menu a').click(function(){
